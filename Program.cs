@@ -20,7 +20,7 @@ namespace helsinki1952
             sr.Close();
             foreach (var item in Eredmenylista)
             {
-                Console.WriteLine(item.sportag);
+                //Console.WriteLine(item.sportag);
             }
             //hány darab eredmény
             Console.WriteLine("A pontszerző helyezések száma: " +Eredmenylista.Count());
@@ -47,6 +47,42 @@ namespace helsinki1952
             Console.WriteLine("Az ezüstérmek száma: " + edb);
             Console.WriteLine("A bronzérmek száma: " + bdb);
             Console.WriteLine("Összesen: "+adb+edb+bdb);
+
+            int osszpontszam = 0;
+            foreach (var item in Eredmenylista)
+            {
+                osszpontszam += item.pont();
+            }
+            Console.WriteLine(osszpontszam);
+
+            int udb = 0;
+            int tdb = 0;
+            foreach (var item in Eredmenylista)
+            {
+                if (item.sportag=="uszas" && item.helyezes<4)
+                {
+                    udb++;
+                }
+                if (item.sportag == "tdb" && item.helyezes<4)
+                {
+                    tdb++;
+                }
+            }
+            if (tdb>udb)
+            {
+                Console.WriteLine("Torna");
+            }
+            else if (udb>tdb)
+            {
+                Console.WriteLine("Úszás");
+            }
+            else
+            {
+                Console.WriteLine("Egyenlő");
+            }
+
+
+
 
             Console.ReadKey();
         }
