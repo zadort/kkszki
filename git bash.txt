@@ -17,5 +17,3 @@ cat - tartalom kiírása
 rm - állomány törlés
 rmdir - fájl törlés
 rm -r -> teljes törlés
-
-
