@@ -1,0 +1,21 @@
+desktop shortcut
+use the nano editor by default
+override the default branch name for new repositories
+enable symbolic links
+
+ctrl l - törlés
+ctrl r - keresés
+pwd - saját helyzet
+ls - listázás
+ls - l -> listázás (részletesebben)
+cd - mappák közötti mozgás
+cd .. -> (mappából való kilépés)
+mkdir - mappa létrehozás
+touch - állomány létrehozása
+nano - szerkesztés
+cat - tartalom kiírása
+rm - állomány törlés
+rmdir - fájl törlés
+rm -r -> teljes törlés
+
+
