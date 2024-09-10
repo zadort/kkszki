@@ -1,0 +1,5 @@
+desktop shortcut
+use the nano editor by default
+override the default branch name for new repositories
+enable symbolic links
+
