@@ -13,7 +13,7 @@ namespace Domino
 
         public Class1(string sor)
         {
-            string[] darabok =sor.Split(' ');
+            string[] darabok = sor.Split(' ');
             this.szam1 = Convert.ToInt32(darabok[0]);
             this.szam2 = Convert.ToInt32(darabok[1]);
         }

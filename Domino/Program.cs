@@ -13,7 +13,6 @@ namespace Domino
         {
             List<Class1> Lista = new List<Class1>();
             var sorok = File.ReadAllLines("domino.txt");
-
             foreach (var sor in sorok)
             {
                 Lista.Add(new Class1(sor));
@@ -23,7 +22,6 @@ namespace Domino
             {
                 Console.WriteLine($"{item.szam1} {item.szam2}");
             }
-
             Console.WriteLine($"3. Feladat: Dominók száma:{Lista.Count}db");
 
             Console.Write("Sorszám: ");
@@ -45,9 +43,24 @@ namespace Domino
                 }
             }
             Console.WriteLine($"5. Feladat: Dupla dominók száma:{db}db");
-            
 
-
+            bool joe = true;
+            for (int i = 0; i < Lista.Count-1; i++)
+            {
+                if (Lista[i].szam1 != Lista[i+1].szam2)
+                {
+                    joe = false;
+                }
+            }
+            Console.WriteLine(joe);
+            if (joe)
+            {
+                Console.WriteLine("6. Feladat: Szabályosak az illesztések");
+            }
+            else
+            {
+                Console.WriteLine("6. Feladat: Nem szabályosak az illesztések");
+            }
 
             Console.ReadLine();
         }
