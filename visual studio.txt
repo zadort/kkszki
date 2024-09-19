@@ -1,0 +1,2 @@
+NuGet -> IronXL
+Add -> New Item... -> gitignore.cs
