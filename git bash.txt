@@ -17,3 +17,9 @@ cat - tartalom kiírása
 rm - állomány törlés
 rmdir - fájl törlés
 rm -r -> teljes törlés
+
+git add .
+git commit -m ""
+git push -u origin main
+
+
