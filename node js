@@ -2,3 +2,4 @@ install node js
 npm install -g npm@10.0.0
 npx create-react-app .
 npm install bootstrap
+es7+ extension
